@@ -241,7 +241,7 @@ while getopts "$optStr" option > /dev/null 2>&1; do
 		e) eOptCheck "$cmdArg";setEpisode "${OPTARG}" "e" "$episode";;
 		s) eOptCheck "$cmdArg";setEpisode "${OPTARG}" "s" "$episode";;
 		h) usage;;
-		f) echo $searchArgs;search "$searchArgs";;
+		f) search "$searchArgs";;
 		r) removeSeries "$removeArgs";;
 		i) eOptCheck "$cmdArg";setEpisode "+1" "e" "$episode";;
 		R) removeAll;;
